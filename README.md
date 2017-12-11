@@ -5,6 +5,7 @@ For more details please read: https://persona.ly/knowledge/?ht_kb=android-integr
 
 Add the following lines to build.gradle of your app and build the project:
 
+```
 repositories {
     maven { url 'https://dl.bintray.com/personaly/maven' }
 }
@@ -12,3 +13,4 @@ repositories {
 dependencies {
     compile 'ly.persona.sdk:personaly:1.0.621@aar'
 }
+```
