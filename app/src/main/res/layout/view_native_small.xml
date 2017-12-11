@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/pn_default_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:background="@android:color/holo_green_dark">
+
+    <RelativeLayout
+        android:id="@+id/pn_title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/pn_icon"
+            android:layout_width="@dimen/pn_icon_size"
+            android:layout_height="@dimen/pn_icon_size"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:padding="@dimen/p_small_size"
+            tools:background="@drawable/close"/>
+
+        <TextView
+            android:id="@+id/pn_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/pn_icon"
+            android:layout_toEndOf="@+id/pn_icon"
+            android:layout_toRightOf="@+id/pn_icon"
+            android:padding="@dimen/p_small_size"
+            android:textSize="@dimen/pn_title_size"
+            android:textStyle="bold"
+            tools:text="Label"/>
+
+        <TextView
+            android:id="@+id/pn_app_developer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pn_title"
+            android:layout_toEndOf="@+id/pn_icon"
+            android:layout_toRightOf="@+id/pn_icon"
+            android:ellipsize="end"
+            android:padding="@dimen/p_small_size"
+            tools:text="app developer"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/pn_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pn_title_layout"
+        android:layout_marginTop="@dimen/p_small_size"
+        android:ellipsize="end"
+        android:maxLines="7"
+        android:padding="@dimen/p_small_size"
+        tools:text="Description"/>
+
+    <ly.persona.sdk.MediaView
+        android:id="@+id/pn_media_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pn_description"/>
+
+    <RatingBar
+        android:id="@+id/pn_rating_bar"
+        style="?android:attr/ratingBarStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pn_media_view"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/p_small_size"
+        android:isIndicator="true"
+        android:numStars="5"
+        android:stepSize="0.1"/>
+
+    <View
+        android:id="@+id/pn_privacy_policy"
+        android:layout_width="@dimen/pn_icon_small_size"
+        android:layout_height="@dimen/pn_icon_small_size"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/pn_media_view"
+        android:padding="@dimen/p_small_size"
+        android:layout_margin="@dimen/p_small_size"/>
+
+    <TextView
+        android:id="@+id/pn_reviews"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pn_rating_bar"
+        android:layout_centerHorizontal="true"
+        android:ellipsize="end"
+        tools:text="100 reviews"/>
+
+    <Button
+        android:id="@+id/pn_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pn_reviews"
+        android:layout_centerHorizontal="true"
+        tools:text="@string/p_install_now"/>
+
+</merge>

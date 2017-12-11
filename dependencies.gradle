@@ -1,0 +1,9 @@
+
+ext {
+    compileSdk = 25
+    targetSdk = 25
+    minSdk = 16
+    buildTools = '25.0.3'  //'26.0.1'  // '25.0.3'
+    supportLib = '25.3.1' // '26.1.0' // '25.3.1'
+    playServices = '11.0.4'
+}
