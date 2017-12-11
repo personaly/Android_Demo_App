@@ -1,4 +1,4 @@
-package ly.persona.sample;
+package ly.persona.example;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -20,13 +20,12 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnCheckedChanged;
 import butterknife.OnClick;
-import ly.persona.sample.admob.AdMobActivity;
-import ly.persona.sample.mopub.MoPubActivity;
+import ly.persona.example.admob.AdMobActivity;
+import ly.persona.example.mopub.MoPubActivity;
 import ly.persona.sdk.AppWallAd;
 import ly.persona.sdk.CampaignAd;
 import ly.persona.sdk.NativeAd;
 import ly.persona.sdk.NativeAdLayout;
-import ly.persona.sdk.NativeAdView;
 import ly.persona.sdk.OfferWallAd;
 import ly.persona.sdk.Personaly;
 import ly.persona.sdk.PopupOfferAd;
@@ -40,13 +39,13 @@ import ly.persona.sdk.model.Impression;
 import ly.persona.sdk.model.NativeDataSet;
 import ly.persona.sdk.model.PersonaError;
 
-import static ly.persona.sample.Keys.APP_ID;
-import static ly.persona.sample.Keys.appWallPlacementId;
-import static ly.persona.sample.Keys.interstitialPlacementId;
-import static ly.persona.sample.Keys.nativePlacementId;
-import static ly.persona.sample.Keys.offersAppId;
-import static ly.persona.sample.Keys.popupOfferPlacementId;
-import static ly.persona.sample.Keys.rewardedPlacementId;
+import static ly.persona.example.Keys.APP_ID;
+import static ly.persona.example.Keys.appWallPlacementId;
+import static ly.persona.example.Keys.interstitialPlacementId;
+import static ly.persona.example.Keys.nativePlacementId;
+import static ly.persona.example.Keys.offersAppId;
+import static ly.persona.example.Keys.popupOfferPlacementId;
+import static ly.persona.example.Keys.rewardedPlacementId;
 
 /**
  * Created by Oleg Tarashkevich on 10/11/2017.

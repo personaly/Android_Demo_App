@@ -1,4 +1,4 @@
-package ly.persona.sample.admob;
+package ly.persona.example.admob;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -21,17 +21,15 @@ import com.google.android.gms.ads.reward.RewardedVideoAdListener;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
-import ly.persona.sample.BaseActivity;
-import ly.persona.sample.R;
-import ly.persona.sdk.Config;
+import ly.persona.example.BaseActivity;
+import ly.persona.example.R;
 import ly.persona.sdk.Personaly;
 import ly.persona.sdk.model.Field;
-import ly.persona.sdk.model.Gender;
 
-import static ly.persona.sample.Keys.adMobInterstitialAdUnitId;
-import static ly.persona.sample.Keys.adMobNativeAdUnitId;
-import static ly.persona.sample.Keys.adMobRewardedVideoAdUnitId;
-import static ly.persona.sample.Keys.moPubNativeAdUnitId;
+import static ly.persona.example.Keys.adMobInterstitialAdUnitId;
+import static ly.persona.example.Keys.adMobNativeAdUnitId;
+import static ly.persona.example.Keys.adMobRewardedVideoAdUnitId;
+import static ly.persona.example.Keys.moPubNativeAdUnitId;
 
 /**
  * Created by Oleg Tarashkevich on 09/11/2017.

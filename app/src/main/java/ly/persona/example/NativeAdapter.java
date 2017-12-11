@@ -1,4 +1,4 @@
-package ly.persona.sample;
+package ly.persona.example;
 
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -11,7 +11,6 @@ import java.util.List;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import ly.persona.sdk.NativeAd;
-import ly.persona.sdk.NativeAdView;
 import ly.persona.sdk.model.NativeDataSet;
 
 /**

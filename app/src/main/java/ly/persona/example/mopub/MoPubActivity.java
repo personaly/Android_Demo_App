@@ -1,4 +1,4 @@
-package ly.persona.sample.mopub;
+package ly.persona.example.mopub;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -27,16 +27,14 @@ import java.util.Set;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
-import ly.persona.sample.BaseActivity;
-import ly.persona.sample.R;
-import ly.persona.sdk.Config;
+import ly.persona.example.BaseActivity;
+import ly.persona.example.R;
 import ly.persona.sdk.Personaly;
 import ly.persona.sdk.model.Field;
-import ly.persona.sdk.model.Gender;
 
-import static ly.persona.sample.Keys.moPubInterstitialAdUnitId;
-import static ly.persona.sample.Keys.moPubNativeAdUnitId;
-import static ly.persona.sample.Keys.moPubRewardedVideoAdUnitId;
+import static ly.persona.example.Keys.moPubInterstitialAdUnitId;
+import static ly.persona.example.Keys.moPubNativeAdUnitId;
+import static ly.persona.example.Keys.moPubRewardedVideoAdUnitId;
 
 /**
  * Created by Oleg Tarashkevich on 09/11/2017.

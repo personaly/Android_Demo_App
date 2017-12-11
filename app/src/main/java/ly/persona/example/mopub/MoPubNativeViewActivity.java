@@ -1,19 +1,11 @@
-package ly.persona.sample.mopub;
+package ly.persona.example.mopub;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
-import android.view.LayoutInflater;
 import android.view.View;
-import android.view.ViewGroup;
-import android.widget.TextView;
 
 import com.mopub.nativeads.MoPubNative;
-import com.mopub.nativeads.MoPubNativeAdLoadedListener;
-import com.mopub.nativeads.MoPubNativeAdPositioning;
-import com.mopub.nativeads.MoPubRecyclerAdapter;
 import com.mopub.nativeads.NativeAd;
 import com.mopub.nativeads.NativeErrorCode;
 import com.mopub.nativeads.PersonalyAdRenderer;
@@ -21,20 +13,18 @@ import com.mopub.nativeads.PersonalyExtras;
 import com.mopub.nativeads.ViewBinder;
 
 import java.util.HashMap;
-import java.util.Locale;
 import java.util.Map;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
-import ly.persona.sample.BaseActivity;
-import ly.persona.sample.R;
+import ly.persona.example.BaseActivity;
+import ly.persona.example.R;
 import ly.persona.sdk.NativeAdView;
-import ly.persona.sdk.Personaly;
 import ly.persona.sdk.model.CreativeType;
 import ly.persona.sdk.model.Field;
 import ly.persona.sdk.model.NativeAdConfig;
 
-import static ly.persona.sample.Keys.moPubNativeAdUnitId;
+import static ly.persona.example.Keys.moPubNativeAdUnitId;
 
 /**
  * Created by Oleg Tarashkevich on 09/11/2017.

@@ -1,4 +1,4 @@
-package ly.persona.sample;
+package ly.persona.example;
 
 import android.content.Intent;
 import android.net.Uri;

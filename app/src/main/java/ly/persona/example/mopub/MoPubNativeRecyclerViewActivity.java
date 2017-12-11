@@ -1,4 +1,4 @@
-package ly.persona.sample.mopub;
+package ly.persona.example.mopub;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -20,12 +20,12 @@ import java.util.Locale;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
-import ly.persona.sample.BaseActivity;
-import ly.persona.sample.R;
+import ly.persona.example.BaseActivity;
+import ly.persona.example.R;
 import ly.persona.sdk.model.CreativeType;
 import ly.persona.sdk.model.NativeAdConfig;
 
-import static ly.persona.sample.Keys.moPubNativeAdUnitId;
+import static ly.persona.example.Keys.moPubNativeAdUnitId;
 
 /**
  * Created by Oleg Tarashkevich on 09/11/2017.

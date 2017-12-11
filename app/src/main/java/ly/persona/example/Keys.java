@@ -1,4 +1,4 @@
-package ly.persona.sample;
+package ly.persona.example;
 
 /**
  * Created by Oleg Tarashkevich on 09/11/2017.
