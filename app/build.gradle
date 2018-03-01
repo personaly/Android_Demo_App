@@ -1,0 +1,73 @@
+apply plugin: 'com.android.application'
+
+android {
+
+    lintOptions {
+        abortOnError false
+    }
+
+    compileSdkVersion compileSdk
+    buildToolsVersion buildTools
+
+    def versionMajor = 1
+    def versionMinor = 0
+    def versionGit = "git rev-list HEAD --count".execute().text.trim()
+    def versionBuild = 1
+
+    defaultConfig {
+        applicationId "ly.persona.example"
+        minSdkVersion minSdk
+        targetSdkVersion targetSdk
+        versionCode versionBuild
+        versionName "${versionMajor}.${versionMinor}.${versionGit}-${versionBuild}"
+        archivesBaseName = "Personaly example $versionName"
+    }
+
+    signingConfigs {
+        config {
+            keyAlias 'mobexs'
+            keyPassword 'firstsmile'
+            storeFile file('../test_key.jks')
+            storePassword 'firstsmile'
+        }
+    }
+
+    buildTypes {
+        debug {
+            debuggable true
+            signingConfig signingConfigs.config
+        }
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.config
+        }
+    }
+}
+
+repositories {
+    maven { url 'https://dl.bintray.com/personaly/maven' }   // Personaly
+    maven { url "https://s3.amazonaws.com/moat-sdk-builds" } // MoPub
+}
+
+dependencies {
+
+    compile "com.android.support:appcompat-v7:$supportLib"
+    compile "com.android.support:design:$supportLib"
+    compile "com.android.support:cardview-v7:$supportLib"
+
+    compile 'com.jakewharton:butterknife:8.5.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.5.1'
+
+    compile('com.mopub:mopub-sdk:4.18.0@aar') {
+        transitive = true
+    }
+
+    compile "com.google.android.gms:play-services-ads:$playServices"
+    
+    compile 'ly.persona.sdk:personaly:1.0.632@aar'
+    compile 'ly.persona.sdk:mediation_admob:1.0.621@aar'
+    compile 'ly.persona.sdk:mediation_mopub:1.0.621@aar'
+
+}
+
