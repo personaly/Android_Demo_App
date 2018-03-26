@@ -19,7 +19,7 @@ repositories {
 }
 
 dependencies {
-    compile 'ly.persona.sdk:personaly:1.0.632@aar'
+    compile 'ly.persona.sdk:personaly:1.0.678@aar'
     compile 'ly.persona.sdk:mediation_admob:1.0.621@aar'
     compile 'ly.persona.sdk:mediation_mopub:1.0.621@aar'
 }
